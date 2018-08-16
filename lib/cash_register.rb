@@ -15,3 +15,4 @@ class CashRegister
     self.items << title
   end
 end
+end
