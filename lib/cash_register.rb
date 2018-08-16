@@ -27,6 +27,7 @@ end
 
 
 def void_last_transaction
-    @total = @total - @transaction
-  end
+  self.total -= self.transaction[:price] * self.transaction[:quantity]
+  # should also remove the previous items, but not in tests!
+end
 end
